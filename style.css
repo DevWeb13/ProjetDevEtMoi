@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 body,
 h1,
@@ -9,6 +9,12 @@ p {
   padding: 0;
   margin: 0;
   font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body {
+  max-width: 1200px;
 }
 
 p {
@@ -113,19 +119,57 @@ h2 {
 
 .cardText {
   margin: 0 10%;
-  position: relative;
-
-  word-wrap: break-word;
-  /* overflow: auto; */
-  height: 40%;
 }
 
 .cardText p {
   font-size: 0.5rem;
-  text-align: center;
-  /* position: relative; */
 }
 
 #commentary {
   width: 50%;
+}
+
+/* ***************** FOOTER ********************** */
+footer {
+  background: #5b359d;
+}
+
+footer > p {
+  padding: 10px 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#icones {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  font-size: 2rem;
+  align-items: center;
+  color: #bdaed8;
+  padding: 0 250px;
+}
+
+#footerNav {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 0.75rem;
+  height: 100px;
+  position: relative;
+}
+
+ul,
+h3 {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.ul {
+  list-style: none;
+  margin: auto;
 }
